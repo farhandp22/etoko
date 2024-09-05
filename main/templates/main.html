@@ -4,3 +4,22 @@
 <p>{{ name }}<p>
 <h5>Class: </h5>
 <p>{{ class }}<p>
+
+
+<table>
+    <tr>
+    <th>Nama Barang</th>
+    <th>Harga Barang</th>
+    <th>Deskripsi</th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for barang in data %}
+    <tr>
+        <th>{{barang.name}}</th>
+        <th>{{barang.price}}</th>
+        <th>{{barang.description}}</th>
+    </tr>
+    {% endfor %}
+</table>
+    
+   
