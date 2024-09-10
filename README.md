@@ -21,7 +21,7 @@
 
 
 ## Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
-
+ 
 ## Jelaskan fungsi git dalam pengembangan perangkat lunak!
 
 
