@@ -23,9 +23,11 @@
 ## Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
  
 ## Jelaskan fungsi git dalam pengembangan perangkat lunak!
-
+fungsi nya adalah sebagai sistem kontrol versi(version control system) untuk menyimpan,mengelola,dan berbagi kode
+sumber secara efisien dan kolaboratif
 
 ## Menurut Anda, dari semua framework yang ada, mengapa framework Django dijadikan permulaan pembelajaran pengembangan perangkat lunak?
-
+karena django mudah dipahami dan memiliki alur pemrograman yang cukup mudah sehingga cocok digunakan untuk orang yang baru belajar pemrograman berbasis web
 
 ## Mengapa model pada Django disebut sebagai ORM?
+Orm merupakan sebuah teknik yang digunakan dalam pemrograman untuk basis data relasional sebagai penyimpanan data yang berupa objek. Model pada django disebut sebagai ORM karena teknik pemetaan data yang memungkinkan objek dalam program berbasis objek.Model pada django adalah sebuah represntasi tabel pada database.
