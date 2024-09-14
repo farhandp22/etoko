@@ -1,6 +1,6 @@
 ## Etoko - Farhan
 
-## link: [link](farhan-dwi-etoko.pbp.cs.ui.ac.id)
+## link: [http://farhan-dwi-etoko.pbp.cs.ui.ac.id](http://farhan-dwi-etoko.pbp.cs.ui.ac.id)
 
 ### Tugas 2
 
@@ -44,19 +44,32 @@ Orm merupakan sebuah teknik yang digunakan dalam pemrograman untuk basis data re
 ### Tugas 3
 
 ## Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
-
+karena untuk implementasi suatu form kita perlu mengirimkan data yang bermacam-macam bentuknya sesuai dengan kesepakatan. lalu,format data yang biasa dilakukan yaitu HTML,XML, dan JSON.
 
 
 ## Menurutmu, mana yang lebih baik antara XML dan JSON? Mengapa JSON lebih populer dibandingkan XML?
+menurut saya lebih baik adalah json karena json lebih mudah dirubah  ke dalam javascript function sedangkan xml lebih susah dibandingkan json,lalu json lebih populer dibanding xml karena lebih cepat dan efisien, sebab baris yang terkandung dalam file json jauh lebih sedikit daripada format xml
 
 
 ## Jelaskan fungsi dari method is_valid() pada form Django dan mengapa kita membutuhkan method tersebut?
+fungsinya adalah untuk memvalidasi form.kita membutuhkan itu untuk agar input dari user valid sebelum dimasukkan ke dalam database.
+
 
 
 ## Mengapa kita membutuhkan csrf_token saat membuat form di Django? Apa yang dapat terjadi jika kita tidak menambahkan csrf_token pada form Django? Bagaimana hal tersebut dapat dimanfaatkan oleh penyerang?
+csrf token digunakan sebagai security pada aplikasi. jika csrf token tidak ditambahkan pada form django maka yang terjadi adalah muncul nya page forbidden 403 dan gagal melakukan verifikasi csrf sehingga data yang baru dimasukkan tidak berhasil ke database. penyerang dapat 
+menambahkan csrf token sendiri yang dibuat seakan-akan 
+otomatis oleh aplikasi.
 
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+1. kita mengimplentasikan base.html sebagai kerangka views
+2. mengubah primary key dari integer menjadi UUID
+3. membuat form input data dan menampilkan data pada html
+4. menampilkan data dalam bentuk XML,JSON,XML by id, JSON by id
+5. menggunakan postman untuk menampilkan data XML dan JSON
+6. melakukan deployment otomatis ke pws menggunakan github action
+
 
 ![image-xml](image-1.png)
 ![image-json](image-2.png)
