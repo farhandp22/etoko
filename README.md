@@ -56,3 +56,8 @@ Orm merupakan sebuah teknik yang digunakan dalam pemrograman untuk basis data re
 
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+
+![image-xml](image-1.png)
+![image-json](image-2.png)
+![image-xml-id](image-3.png)
+![image-json-id](image-4.png)

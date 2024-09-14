@@ -13,6 +13,7 @@
 {% else %}
 <table>
     <tr>
+    <th>ID</th>
     <th>Nama Barang</th>
     <th>Harga Barang</th>
     <th>Deskripsi</th>
@@ -20,6 +21,7 @@
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for barang in data %}
     <tr>
+        <th>{{barang.id}}</th>
         <th>{{barang.name}}</th>
         <th>{{barang.price}}</th>
         <th>{{barang.description}}</th>
