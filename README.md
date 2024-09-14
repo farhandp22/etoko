@@ -46,6 +46,7 @@ Orm merupakan sebuah teknik yang digunakan dalam pemrograman untuk basis data re
 ## Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
 
 
+
 ## Menurutmu, mana yang lebih baik antara XML dan JSON? Mengapa JSON lebih populer dibandingkan XML?
 
 
