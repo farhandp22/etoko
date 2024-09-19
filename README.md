@@ -75,3 +75,34 @@ otomatis oleh aplikasi.
 ![image-json](image-2.png)
 ![image-xml-id](image-3.png)
 ![image-json-id](image-4.png)
+
+### Tugas 4
+1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
+    django usercreationform adalah form bawaan django yang berguna untuk memudahkan developer dalam pembuatan form
+  pendaftaran user dalam aplikasi karena form sudah di generate otomatis sesuai bawaan django. kelebihan nya adalah mudah dan praktis
+  sedangkan kekurangan nya adalah kurang fleksibilitas sesuai yang diinginkan.misalnya adalah penentuan pembuatan username terbatas pada 
+  ketentuan yang berlaku peraturan pembuatan password untuk validasi terbatas hanya pada username dan password
+
+2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
+    autentikasi adalah memverifikasi siapa user sedangkan otorisasi adalah menentukan seorang user yang terautentikasi dapat melakukan 
+    sesuatu sesuai permission nya. pada sistem django autentikasi sudah mengandle keduanya. baik autentikasi ataupun otorisasi.
+
+3.  Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
+    cookies adalah salah satu cara untuk melakukan holding state dengan menggunakan session id. django menggunakan cookies untuk mengelola data sesi pengguna berdasarkan token pada session id. token tersebut berisi informasi dari user yang dapat dikenali pada sistem django.
+
+4. Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
+    secara default dan pengembangan web cookies aman digunakan karena cookies hanya berisi bagian kecil data yang dikirimkan oleh server ke
+    komputer pengguna . sedangkan untuk risiko yang perlu diwaspadai adalah ketika menggunakan komputer publik yang dapat diakses orang banyak,misalkan cookies masih ada di web browser informasi dapat dicuri.untuk menanggulangi nya dapat menggunakan incognito.
+
+5.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).?
+    - pertama-tama kita membuat fungsi registrasi pada views.
+    - lalu buat form dengan menggunakan html 
+    - buat fungsi login pada views 
+    - membuat form login menggunakan html
+    - membuat fungsi logout pada views
+    - menambahkan tombol untuk logout 
+    - melakukan restriksi halaman dengan dekorator login require
+    - menggunakan data dari cookies berguna untuk user tidak perlu login berulang kali setiap 
+    refresh 
+    - menghubungkan model dengan user berguna untuk mengetahui produk milik siapa dan dapat difilter sesuai dengan user yang login
+    
