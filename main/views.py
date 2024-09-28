@@ -41,11 +41,21 @@ def create_product(request):
 
 def show_xml(request):
     data = Product.objects.all()
-    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
+    context = {
+        'last_login': request.COOKIES['last_login'],
+        'data' : serializers.serialize("xml", data)
+    }
+    return render(request, 'xml_json.html', context)
 
 def show_json(request):
     data = Product.objects.all()
-    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+    context = {
+        'last_login': request.COOKIES['last_login'],
+        'data' : serializers.serialize("json", data)
+    }
+    
+    return render(request, 'xml_json.html', context)
+
 
 def show_xml_by_id(request, id):
     data = Product.objects.filter(pk=id)
