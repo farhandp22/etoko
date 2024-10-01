@@ -106,3 +106,39 @@ otomatis oleh aplikasi.
     refresh 
     - menghubungkan model dengan user berguna untuk mengetahui produk milik siapa dan dapat difilter sesuai dengan user yang login
     
+
+
+## Tugas 5
+1. Jika terdapat beberapa CSS selector untuk suatu elemen HTML, jelaskan urutan prioritas pengambilan CSS selector tersebut!
+    ada 4 kategori dalam  selector css:
+    - inline styles = selector yang berlangsung pada html tag. Example: <h1 style="color: pink;">
+    - IDs = ID pada tag sebagai selector-nya. ID bersifat unik dalam satu halaman web. ID dapat ditambahkan pada halaman template HTML.  Example: #navbar
+    - Classes, pseudo-classes, attribute selectors = untuk mengelompokkan elemen dengan karakteristik yang sama. Example: .test, :hover, [href]
+    - Elements and pseudo-elements = Element Selector memungkinkan kita mengubah properti untuk semua elemen yang memiliki tag HTML yang sama.
+      Example: h1
+2. Mengapa responsive design menjadi konsep yang penting dalam pengembangan aplikasi web? Berikan contoh aplikasi yang sudah dan belum menerapkan responsive design!
+    agar tampilan web menarik dan terlihat menyesuaikan dengan dimensi browser
+    contoh yang udah menamipilkan responsive design: scele(https://scele.cs.ui.ac.id)
+    contoh yang belom menamipilkan responsive design: deque university web (https://dequeuniversity.com/library/responsive/1-non-responsive)
+3. Jelaskan perbedaan antara margin, border, dan padding, serta cara untuk mengimplementasikan ketiga hal tersebut!
+    - Content: isi dari box (tempat terlihatnya teks dan gambar)
+    - Padding: mengosongkan area di sekitar konten (transparan)
+    - Border: garis tepian yang membungkus konten dan padding-nya
+    - Margin: mengosongkan area di sekitar border (transparan)
+    ![Alt text](image-5.png)
+
+
+4. Jelaskan konsep flex box dan grid layout beserta kegunaannya!
+   ![Alt text](image-7.png)
+    Untuk membuat layout menggunakan Flexbox, kita menambahkan display: flex untuk mendefinikan Flexbox pada sebuah elemen dan flex-direction (untuk mengatur arah elemen : column atau row).
+    sedangkan Untuk membuat layout menggunakan CSS Grid, kita menambahkan display: grid di sebuah elemen dan property grid(mengatur ukuran elemen) & grid-gap (untuk mengatur jarak antar elemen).
+
+
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)!
+- konfigurasi menggunkan tailwind yang saya terapkan
+- lalu kita membuat fitur edit product
+- kemudian membuat fitur hapus product
+- menambahkan navbar pada aplikasi dan dimasukkan ke dalam base html
+- melakukan konfigurasi static file pada django
+- menerapkan tailwind css dengan inline dan external
+- menerapakan styling login,register,home, create product, dan edit product
