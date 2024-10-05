@@ -142,3 +142,26 @@ otomatis oleh aplikasi.
 - melakukan konfigurasi static file pada django
 - menerapkan tailwind css dengan inline dan external
 - menerapakan styling login,register,home, create product, dan edit product
+
+## Tugas 6
+
+1. Jelaskan manfaat dari penggunaan JavaScript dalam pengembangan aplikasi web!
+    manfaat penggunaan nya adalah implementasi ajax,dan membuat aplikasi web menjadi lebih interaktif dengan adanya javascript
+
+2. Jelaskan fungsi dari penggunaan await ketika kita menggunakan fetch()! Apa yang akan terjadi jika kita tidak menggunakan await?
+    untuk mengimplmentasikan asinkronus yaitu fetch terlebih dahulu selesai, baru bisa dilanjutkan ke program selanjutnya, program dilakukan secara
+    in order dari atas ke bawah tidak ada yang saling mendahului. apabila jika tidak menggunakan await yang terjadi program dibawah fetch tidak terekseskusi dengan baik karena hasil dari fetch blom tentu sudah didapat.
+3. Mengapa kita perlu menggunakan decorator csrf_exempt pada view yang akan digunakan untuk AJAX POST?
+    untuk membuat keamanan lebih kuat pada aplikasi web  ketika melakukan post request dengan menggunakan ajax.
+4. Pada tutorial PBP minggu ini, pembersihan data input pengguna dilakukan di belakang (backend) juga. Mengapa hal tersebut tidak dilakukan di frontend saja?
+    hal ini dilakukan oleh backend juga karena untuk memperkuat keamanan pada backend. karena jika hacker mencoba untuk meretas ke backend
+    hacker tersebut tidak berhasil karena sudah dihandle
+
+5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial)!
+    - menambahkan fungsi untuk menambahkan product dengan AJAX
+    - menambahkan routing untuk fungsi product AJAX
+    - menampilkan data product dengan menggunakan fetch API 
+    - membuat form berbentuk modal untuk mengimplemntasikan create product dengan ajax
+    -  mengimplementasikan refresh otomatis tanpa reload dengan AJAX
+    - mengimplementasikan cross site scripting atau XSS pada backend
+    - membersihkan data dengan DOMPurify pada frontend
