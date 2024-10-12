@@ -124,7 +124,7 @@ def delete_product(request, id):
 def add_product_ajax(request):
     name = strip_tags(request.POST.get("name"))
     price  = strip_tags(request.POST.get("price"))
-    description = request.POST.get("description")
+    description = strip_tags(request.POST.get("description"))
     user = request.user
 
     new_product = Product(
@@ -135,7 +135,6 @@ def add_product_ajax(request):
     new_product.save()
 
     return HttpResponse(b"CREATED", status=201)
-    
     
     
     

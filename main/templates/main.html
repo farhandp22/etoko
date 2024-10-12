@@ -102,22 +102,22 @@
     else {
         classNameString = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         moodEntries.forEach((barang) => {
-          const name = DOMPurify.sanitize(item.fields.name);
-          const price = DOMPurify.sanitize(item.fields.price);
-          const description = DOMPurify.sanitize(item.fields.description);
+          const name = DOMPurify.sanitize(barang.fields.name);
+          const price = DOMPurify.sanitize(barang.fields.price);
+          const description = DOMPurify.sanitize(barang.fields.description);
             htmlString += `
             <div class="relative break-inside-avoid max-w-sm mx-auto shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
               <div class="relative bg-white border border-gray-200 rounded-lg">
                 <div class="p-4 bg-gray-100 border-b">
-                  <h3 class="font-bold text-2xl text-gray-900">${barang.fields.name}</h3>
+                  <h3 class="font-bold text-2xl text-gray-900">${name}</h3>
                   <p class="text-gray-500">${barang.id}</p>
                 </div>
                 <div class="p-4">
                   <p class="font-semibold text-gray-800 text-lg mb-2">Description</p>
-                  <p class="text-gray-600 mb-4">${barang.fields.description}</p>
+                  <p class="text-gray-600 mb-4">${description}</p>
                   <p class="font-semibold text-gray-800 mb-2">Price</p>
                   <div class="flex items-center">
-                    <span class="text-xl text-green-600 font-bold">${barang.fields.price}</span>
+                    <span class="text-xl text-green-600 font-bold">${price}</span>
                   </div>
                 </div>
                 <div class="p-4 flex justify-between bg-gray-100">
